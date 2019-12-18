@@ -19,7 +19,6 @@ def maxHeapify(A,i,heapSize):
     if largest != i:
         A[i],A[largest]=A[largest],A[i]
         maxHeapify(A,largest,heapSize)
-    print(A)
 
 def buildMaxHeap(A):
     heapSize = len(A)
@@ -29,16 +28,12 @@ def buildMaxHeap(A):
 def heapSort(A):
     buildMaxHeap(A)
     heapSize=len(A)
-    print("$$$$$$$$$$$$$$$$$")
-    print(A)
-    print("$$$$$$$$$$$$$$$$$")
     for i in range(len(A)-1,0,-1):
         A[0],A[i]=A[i],A[0]
         heapSize = heapSize - 1
         maxHeapify(A,0,heapSize)
 
-
-A=[5,12,4,6,1,23,14]
+print("Enter an array to Sort (numbers seperated by space):")
+A=list(map(int,input().split()))
 heapSort(A)
-print("################")
 print(A)
