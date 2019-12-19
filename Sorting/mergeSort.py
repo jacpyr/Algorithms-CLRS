@@ -44,6 +44,3 @@ else:
 mergeSort(A,0,len(A)-1)
 print("Sorted array:")
 print(A)
-
-
-

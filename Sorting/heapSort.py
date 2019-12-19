@@ -74,7 +74,7 @@ else:
         pass
 heapSort(A)
 print("Sorted array:")
-print(A)
+[print(a,end=" ") for a in A]
 heaprevSort(A)
 print("Reverse sorted array:")
-print(A)
+[print(a,end=" ") for a in A]
