@@ -33,7 +33,7 @@ def heapSort(A):
         heapSize = heapSize - 1
         maxHeapify(A,0,heapSize)
 
-print("Enter an array to Sort (numbers seperated by space):")
-A=list(map(int,input().split()))
+print("Enter an array to Sort (elements seperated by space):")
+A=list(input().split())
 heapSort(A)
 print(A)
